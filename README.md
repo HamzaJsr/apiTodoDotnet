@@ -1,4 +1,3 @@
-
 # Todo API
 
 Une API REST simple pour gérer des tâches (Todo). Cette API permet de créer, lire, mettre à jour et supprimer des tâches.
@@ -12,16 +11,19 @@ Une API REST simple pour gérer des tâches (Todo). Cette API permet de créer, 
 ## Installation
 
 1. Clonez le dépôt :
+
    ```bash
    git clone https://github.com/ton-utilisateur/TodoApi.git
    ```
 
 2. Accédez au dossier du projet :
+
    ```bash
    cd TodoApi
    ```
 
 3. Restaurez les dépendances :
+
    ```bash
    dotnet restore
    ```
@@ -33,13 +35,13 @@ Une API REST simple pour gérer des tâches (Todo). Cette API permet de créer, 
 
 ## Endpoints de l'API
 
-| Méthode HTTP | Endpoint               | Description                                   |
-|--------------|------------------------|-----------------------------------------------|
-| `GET`        | `/api/todo`            | Récupère toutes les tâches                   |
-| `GET`        | `/api/todo/{id}`       | Récupère une tâche par son ID                |
-| `POST`       | `/api/todo`            | Crée une nouvelle tâche                      |
-| `PUT`        | `/api/todo/{id}`       | Met à jour une tâche existante par son ID    |
-| `DELETE`     | `/api/todo/{id}`       | Supprime une tâche par son ID                |
+| Méthode HTTP | Endpoint         | Description                               |
+| ------------ | ---------------- | ----------------------------------------- |
+| `GET`        | `/api/todo`      | Récupère toutes les tâches                |
+| `GET`        | `/api/todo/{id}` | Récupère une tâche par son ID             |
+| `POST`       | `/api/todo`      | Crée une nouvelle tâche                   |
+| `PUT`        | `/api/todo/{id}` | Met à jour une tâche existante par son ID |
+| `DELETE`     | `/api/todo/{id}` | Supprime une tâche par son ID             |
 
 ### Exemple de modèle JSON pour une tâche
 
@@ -55,13 +57,16 @@ Une API REST simple pour gérer des tâches (Todo). Cette API permet de créer, 
 ## Utilisation
 
 1. Une fois l'application lancée, l'API sera disponible à :
+
    ```
-   http://localhost:5000
+   http://localhost:5013
    ```
 
 2. Testez les endpoints via un client REST comme Postman ou Insomnia :
+
    - **Créer une tâche** (POST) :
-     - URL : `http://localhost:5000/api/todo`
+
+     - URL : `http://localhost:5013/api/todo`
      - Corps :
        ```json
        {
@@ -72,7 +77,8 @@ Une API REST simple pour gérer des tâches (Todo). Cette API permet de créer, 
        ```
 
    - **Mettre à jour une tâche** (PUT) :
-     - URL : `http://localhost:5000/api/todo/1`
+
+     - URL : `http://localhost:5013/api/todo/1`
      - Corps :
        ```json
        {
@@ -83,7 +89,7 @@ Une API REST simple pour gérer des tâches (Todo). Cette API permet de créer, 
        ```
 
    - **Supprimer une tâche** (DELETE) :
-     - URL : `http://localhost:5000/api/todo/1`
+     - URL : `http://localhost:5013/api/todo/1`
 
 ## Fonctionnalités
 
@@ -91,16 +97,6 @@ Une API REST simple pour gérer des tâches (Todo). Cette API permet de créer, 
 - Récupérer toutes les tâches ou une tâche spécifique
 - Mettre à jour les informations d'une tâche
 - Supprimer une tâche
-
-## Contribuer
-
-Les contributions sont les bienvenues ! Suivez les étapes :
-
-1. Forkez le dépôt
-2. Créez une branche : `git checkout -b ma-nouvelle-fonctionnalite`
-3. Faites vos modifications et validez-les : `git commit -m "Ajout d'une nouvelle fonctionnalité"`
-4. Poussez vos modifications : `git push origin ma-nouvelle-fonctionnalite`
-5. Ouvrez une pull request
 
 ## Licence
 
